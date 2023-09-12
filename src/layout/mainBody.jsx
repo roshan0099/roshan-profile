@@ -51,7 +51,7 @@ export function MainBody() {
                     <div className="cols">
                         <div className="col" id="1"    >
                             <h1>Easedementia</h1>
-                            <img src="/github.png" alt="" height="90px" width="90px" />
+                            <a href="https://easedementia.com/" className="linkhub"><img src="/github.png" alt="" height="90px" width="90px" /></a>
                            <p>
                             A web application for a start-up
                             that focuses on the well being of
@@ -61,7 +61,7 @@ export function MainBody() {
 
                         <div className="col" id="2"    >
                             <h1> Confab</h1>
-                            <img src="/github.png" alt="" height="90px" width="90px" />
+                            <a href="https://github.com/roshan0099/spaceWeb" className="linkhub"><img src="/github.png" alt="" height="90px" width="90px" /></a>
                             <p>
                                 Trying to get my hands on socketio and its different possibilites by creating
                                 an application where you can cht as well as draw with other people real time (work in progress).
@@ -73,7 +73,7 @@ export function MainBody() {
     
                         <div className="col" id="3"    >
                             <h1> Musik </h1>
-                            <img src="/github.png" alt="" height="90px" width="90px" />
+                            <a href="https://github.com/roshan0099/musik-nodejs" className="linkhub"><img src="/github.png" alt="" height="90px" width="90px" /></a>
                             <p>
                                 A web application uses spotify api and web-scraping to get video id from the
                                 youtube
@@ -82,7 +82,7 @@ export function MainBody() {
                         </div>
                         <div className="col" id = "4"    >
                             <h1> SpaceWeb</h1>
-                            <img src="/github.png" alt="" height="90px" width="90px" />
+                            <a href="https://roshan0099.github.io/spaceWeb/" className="linkhub"><img src="/github.png" alt="" height="90px" width="90px" /></a>
                             <p>
                                 Space is a simple yet a complex esolang with just 6 symbols. It’s one of
                                 the smallest interpreted programming language out there

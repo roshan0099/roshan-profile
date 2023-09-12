@@ -83,10 +83,10 @@ p{
     border-radius: 2%;
 } */
 
-.col:hover > img{
+/* .col:hover > img{
     opacity: 2;
     display: block;
-}
+} */
 
 .footer{
 
@@ -98,6 +98,13 @@ p{
     justify-content: space-between;
 }
 
+.linkhub{
+    display: none;
+}
+
+.col:hover > .linkhub{
+    display: block;
+}
 
 /* Design concept */
 #revolving {
@@ -119,7 +126,6 @@ p{
    
 }
 
-
 .square:nth-child(1){
     animation: spin 10s linear infinite;
 }
@@ -138,6 +144,7 @@ p{
 
 .square:nth-child(5){
     animation: revspin 18s linear infinite;
+    
 }
 
 
