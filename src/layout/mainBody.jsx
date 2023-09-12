@@ -39,7 +39,7 @@ export function MainBody() {
                         <h1>Hi,this is <i>Roshan </i> </h1>
 
                         <p id="intro-para"> And I am on the journey of trying out different techs
-                            in the market. I am a web developer, designer who likes to integrate existing designs and has keen
+                            in the market. I am a software developer who likes to integrate existing designs and has keen
                             interests in data analytics, cyber and stocks. I love exploring different technologies and picking up new
                             skills as I believe it helps me to expand my arsenal.
                         </p>

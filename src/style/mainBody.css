@@ -175,6 +175,10 @@ p{
 
 
 @media screen and (max-width : 396px){
+
+    body{
+        overflow-x: hidden;
+    }
     #main-container{
         flex-direction: column;
     }  
@@ -183,10 +187,27 @@ p{
         padding: 10px;
         padding-left: 20px;;
     }
-
-
+    
+    #revolving{
+        flex-grow: 2;
+        padding: 0;
+        margin: 0;
+        min-height: 250px;
+        /* overflow-y: hidden; */
+    }
+   
     .square{
-        position: relative;
+        position: absolute;
+    
+    }
+
+    #intro-para{
+        text-align:left;
+        /* word-break: break-all; */
+    }
+
+    .footer{
+        padding-top: 10px;
     }
 }
 
