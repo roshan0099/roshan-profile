@@ -1,0 +1,25 @@
+#navbar{
+    display: flex;
+    /* background-color: blueviolet; */
+}
+
+#logo{
+    flex: 2 1 70px;
+    font-size: 169px;
+    /* padding-left: 20px; */
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover{
+    text-decoration: underline;
+}
+#item-navbar{
+    padding-top: 20px;
+    padding-right: 20px;
+    align-content: center;
+    font-size: 26px;
+}

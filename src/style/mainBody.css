@@ -1,0 +1,186 @@
+
+body {
+    font-family: 'Courier New', monospace;
+  }
+
+#main-container{
+    /* background-color: aqua; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+}
+
+#intro{
+    /* background-color: blue; */
+    padding-right: 15px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    flex:1;
+    align-items: center;
+
+    /* padding-top: 250px; */
+    
+    
+}
+p{
+    font-size: 17px;   
+}
+
+#intro-para{
+    text-align: justify;
+}
+.main-content{
+    align-self: flex-end;
+    /* margin-bottom: 1px; */
+}
+
+#display-work{
+    flex: 1;
+    align-items: center;
+    margin-left: 3px;
+}
+
+.cols{
+   
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+.col{
+    
+    margin: 5px;
+    padding-right: 15px;
+    padding-left: 20px;
+    /* flex: 1; */
+    /* flex: 1 1 auto; */
+    flex-basis: 35%;
+    flex-grow: 1;
+    min-height: 230px;
+    border: 1px solid rgb(82, 79, 79);
+    transition: 1s;
+    cursor: pointer;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.col > img{
+    display: none;
+}
+
+.col:hover>p{
+    display: none;
+}
+
+.col:hover{
+    background-color: white;
+}
+/* .col:hover > p{
+   
+    display: none;
+
+    border-radius: 2%;
+} */
+
+.col:hover > img{
+    opacity: 2;
+    display: block;
+}
+
+.footer{
+
+    padding-top: 45px;
+    display: flex;
+    /* position: absolute; */
+    bottom: 0;
+
+    justify-content: space-between;
+}
+
+
+/* Design concept */
+#revolving {
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    /* background-color: grey; */
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+.square{
+    position: absolute;
+    width : 269px;
+    height: 269px;
+    border : 1px solid black;
+   
+}
+
+
+.square:nth-child(1){
+    animation: spin 10s linear infinite;
+}
+
+.square:nth-child(2){
+    animation: spin 16s linear infinite;
+}
+
+.square:nth-child(3){
+    animation: spin 22s linear infinite;
+}
+
+.square:nth-child(4){
+    animation: revspin 32s linear infinite;
+}
+
+.square:nth-child(5){
+    animation: revspin 18s linear infinite;
+}
+
+
+@keyframes revspin {
+
+    from{
+        transform : rotateZ(0deg)
+    }
+
+    to{
+        transform : rotateZ(-360deg)
+    }
+}
+
+
+
+@keyframes spin {
+
+    from{
+        transform : rotateZ(0)
+    }
+
+    to{
+        transform : rotateZ(1turn)
+    }
+}
+
+
+
+@media screen and (max-width : 396px){
+    #main-container{
+        flex-direction: column;
+    }  
+    
+    .col{
+        padding: 10px;
+        padding-left: 20px;;
+    }
+
+
+    .square{
+        position: relative;
+    }
+}
+
+
