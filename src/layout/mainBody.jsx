@@ -110,7 +110,7 @@ export function MainBody() {
 
                         <div className="col" id="2"    >
                             <h1> Confab</h1>
-                            <a href="https://github.com/roshan0099/spaceWeb" className="linkhub"><img src="/github.png" alt="" height="90px" width="90px" /></a>
+                            <a href="https://github.com/roshan0099/Website-socketio-express" className="linkhub"><img src="/github.png" alt="" height="90px" width="90px" /></a>
                             <p>
                                 Trying to get my hands on socketio and its different possibilites by creating
                                 an application where you can cht as well as draw with other people real time (work in progress).
