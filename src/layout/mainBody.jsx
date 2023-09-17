@@ -1,20 +1,69 @@
-import { useEffect } from "react"
+import { useEffect, useRef, useState } from "react"
 import "../style/mainBody.css"
 
 export function MainBody() {
-    var elm = []
-    useEffect((e)=>{
 
-        elm = Array.from(document.getElementsByClassName("col"))
-        // console.log('i fire once : ', elm);
-  },[]);
+    var name = useRef(0) 
+
+
+    var [size, useSize] = useState(0);
+    var temp = 4
+    var displayWork = document.getElementsByClassName("col")
+
+    var revolvingId = useRef(0)
+
+    function sizeChange(){
+
+        if(size < 4){
+            useSize(size+1)
+            displayWork[size].style.transform = `scale(0)`
+        }
+        else{
+            // useSize(size--)
+            temp--
+            displayWork[temp].style.transform = `scale(1)`
+
+            if(temp == 0){
+                temp = 4
+                useSize(0)
+            }
+        }
+
+        
+    }
+
+    var animationToggle = true
+    function pauseAnimation(){
+        var displaySquare = document.getElementsByClassName("square")
+        
+        displaySquare = Array.from(displaySquare)
+        if(animationToggle == true){
+
+        displaySquare.map((square) => {
+
+            square.style.animationPlayState = "paused"
+        })
+        animationToggle = false
+        
+        }else{
+            displaySquare.map((square) => {
+
+                square.style.animationPlayState = "running"
+            })
+
+            animationToggle = true
+        }
+
+
+    }
+
 
     return (
 
         <>
             <div id="main-container">
                 <div id="intro">
-                    <div id="revolving">
+                    <div id="revolving"  ref={revolvingId} onClick={pauseAnimation}>
 
                         <div className="square">
                             
@@ -36,10 +85,10 @@ export function MainBody() {
                     </div>
                     <div className="main-content">
 
-                        <h1>Hi,this is <i>Roshan </i> </h1>
+                        <h1>Hi,this is <span id="main-name" onClick={sizeChange} ref={name}>Roshan</span> </h1>
 
                         <p id="intro-para"> And I am on the journey of trying out different techs
-                            in the market. I am a software developer who likes to integrate existing designs and has keen
+                            in the market. I am a software who likes to integrate existing designs and has keen
                             interests in data analytics, cyber and stocks. I love exploring different technologies and picking up new
                             skills as I believe it helps me to expand my arsenal.
                         </p>
