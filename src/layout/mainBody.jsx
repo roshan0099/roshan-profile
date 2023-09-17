@@ -88,8 +88,8 @@ export function MainBody() {
                         <h1>Hi,this is <span id="main-name" onClick={sizeChange} ref={name}>Roshan</span> </h1>
 
                         <p id="intro-para"> And I am on the journey of trying out different techs
-                            in the market. I am a software who likes to integrate existing designs and has keen
-                            interests in data analytics, cyber and stocks. I love exploring different technologies and picking up new
+                            in the market. I am a software guy who likes to integrate existing designs and has keen
+                            interests in developing and designing applications, cyber and stocks. I love exploring different technologies and picking up new
                             skills as I believe it helps me to expand my arsenal.
                         </p>
                     </div>
