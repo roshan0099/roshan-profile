@@ -109,11 +109,10 @@ export function MainBody() {
                         </div>
 
                         <div className="col" id="2"    >
-                            <h1> Confab</h1>
-                            <a href="https://github.com/roshan0099/Website-socketio-express" className="linkhub"><img src="/github.png" alt="" height="90px" width="90px" /></a>
+                            <h1> Celluloid</h1>
+                            <a href="https://celluloid-movieapp.vercel.app/" className="linkhub"><img src="/github.png" alt="" height="90px" width="90px" /></a>
                             <p>
-                                Trying to get my hands on socketio and its different possibilites by creating
-                                an application where you can cht as well as draw with other people real time (work in progress).
+                                WebApp where you can search and find the synopsis and info about movies (work in progress).
 
                             </p>
                         </div>
@@ -125,7 +124,7 @@ export function MainBody() {
                             <a href="https://github.com/roshan0099/musik-nodejs" className="linkhub"><img src="/github.png" alt="" height="90px" width="90px" /></a>
                             <p>
                                 A web application uses spotify api and web-scraping to get video id from the
-                                youtube
+                                youtube 
 
                             </p>
                         </div>
