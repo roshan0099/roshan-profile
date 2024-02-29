@@ -8,7 +8,7 @@ export function Header(){
             <div className="sublogo">R</div>
         </div>
         <div id="item-navbar">
-        <a href="https://drive.google.com/file/d/1UBaGaZd3wkJdUcOnjgGdBmuUvvAW8L2l/view?usp=sharing">Resume</a>
+        <a href="https://drive.google.com/file/d/1Uv2GZfm9W68uR-g6bTSMDJC25I7o00JF/view?usp=sharing">Resume</a>
         </div>
     </nav>
     )

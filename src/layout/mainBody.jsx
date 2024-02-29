@@ -147,7 +147,7 @@ export function MainBody() {
                 <span className="github footer-element"><a href="https://github.com/roshan0099">Github</a></span>
                 <span className="mail footer-element"><a href="mailto: roshan09ka@gmail.com">Email</a></span>
                 <span className="linkedin footer-element"><a href="https://www.linkedin.com/in/mohamed-roshan-k/">Linkedin</a></span>
-                <span className="twitter footer-element"><a href="https://twitter.com/mroshanka">Twitter/X</a></span>
+                <span className="twitter footer-element"><a href="https://twitter.com">Twitter/X</a></span>
             </div>
         </>
     )
